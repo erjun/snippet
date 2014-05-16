@@ -28,5 +28,5 @@ function /*array*/ quickSort(/*array*/arr, /*string*/member, /*bool*/ desc){
         }
     }
 
-    return quickSort(left, member).concat([pivot], quickSort(right, member));
+    return quickSort(left, member, desc).concat([pivot], quickSort(right, member, desc));
 }
